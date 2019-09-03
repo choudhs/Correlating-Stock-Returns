@@ -53,7 +53,7 @@ corr_data_frame.head(10)
 mask = np.zeros_like(corr_data_frame)
 mask[np.triu_indices_from(mask)] = True
 
-#generate plot
+# generate plot
 seaborn.heatmap(corr_df, cmap='RdYlGn', vmax=1.0, vmin=-1.0 , mask = mask, linewidths=2.5)
 plt.yticks(rotation=0) 
 plt.xticks(rotation=90) 
